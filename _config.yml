@@ -205,6 +205,11 @@ include: ["_pages"]
 exclude:
   - al-folio-upgrade-report.md
   - bin/
+  - _posts/
+  - _projects/
+  - _teachings/
+  - _books/
+  - assets/jupyter/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile
