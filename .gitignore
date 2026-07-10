@@ -3,6 +3,7 @@ _site
 .DS_store
 .idea
 .jekyll-cache
+cloudflare-placeholder/
 .jekyll-metadata
 .ruby-version
 .sass-cache
