@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://lab.qiancan.cloud/sitemap.xml
