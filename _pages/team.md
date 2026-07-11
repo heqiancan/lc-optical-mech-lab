@@ -1,4 +1,5 @@
 ---
+# 页面配置：导师团队显示在顶部导航的第 3 个位置。
 layout: page
 permalink: /team/
 title: 导师团队
@@ -6,6 +7,13 @@ description: 机械室研究与人才培养团队。
 nav: true
 nav_order: 3
 ---
+
+<!--
+  导师资料维护说明：
+  1. 照片放在 assets/img/team/，并通过 relative_url 引用。
+  2. 邮箱使用 mailto:，站外主页使用完整 https:// 地址。
+  3. 新增导师时复制一个完整的“标题 + 图片 + 简介 + 列表”区块。
+-->
 
 ## 邵帅 / Shuai Shao
 

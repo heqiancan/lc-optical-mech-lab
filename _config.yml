@@ -1,5 +1,7 @@
 # -----------------------------------------------------------------------------
 # Site settings
+# 日常维护区：网站名称、简介、页脚和公开域名可以在这里安全修改。
+# 修改 url 后还需要同步检查 Cloudflare Pages 自定义域名。
 # -----------------------------------------------------------------------------
 
 title: 光电对抗研究部机械室
@@ -78,6 +80,7 @@ al_folio:
 
 # -----------------------------------------------------------------------------
 # Layout
+# 页面布局区：导航/页脚是否固定，以及正文最大宽度。
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
@@ -92,6 +95,7 @@ max_width: 930px
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
+# 分享到微信或社交平台时使用的预览信息；图片应放在公开的 assets 目录。
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
@@ -202,6 +206,8 @@ kramdown:
 
 # Includes & excludes
 include: ["_pages"]
+# 构建排除列表：这里的路径不会进入公开网站。
+# reference_files 位于项目外层并保持本地，不要移动到公开 assets 目录。
 exclude:
   - al-folio-upgrade-report.md
   - bin/
@@ -222,6 +228,7 @@ exclude:
   - INSTALL.md
   - LICENSE
   - lighthouse_results/
+  - MAINTENANCE.md
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
