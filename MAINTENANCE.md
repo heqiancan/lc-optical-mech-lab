@@ -15,6 +15,8 @@
 | 论文数据                             | `_bibliography/papers.bib` |
 | 招生与联系方式                       | `_pages/join.md`           |
 | 导师照片、招生图片                   | `assets/img/team/`         |
+| 全站颜色、卡片、按钮和响应式布局     | `assets/css/lab-site.css`  |
+| 滚动动画、数字动画和首页 3D 背景     | `assets/js/lab-site.js`    |
 
 不要直接修改以下内容：
 
@@ -59,7 +61,7 @@ front matter 下方可以混用三种内容：
 
 ### 修改首页文字或导师卡片
 
-编辑 `_pages/about.md`。页面可见内容位于 `<style>...</style>` 之后；`<style>` 内是首页专用样式，普通文字更新不需要改 CSS。
+编辑 `_pages/about.md`。该文件现在主要保留页面内容结构；全站视觉样式集中在 `assets/css/lab-site.css`，普通文字更新不需要改 CSS。
 
 修改导师照片时，将图片放入 `assets/img/team/`，然后使用：
 
@@ -89,10 +91,10 @@ front matter 下方可以混用三种内容：
 
 编辑 `_pages/yu_chao.md`：
 
-- `<style>`：页面颜色、卡片布局、深浅主题和手机断点。
-- `<main class="yc-page">`：所有可见内容。
+- 页面中的 HTML 区块：所有可见内容。
+- `assets/css/lab-site.css` 中的 `.yc-*`：该页的卡片布局和响应式样式。
 - `data-count`：动态数字的最终值，标签内的静态文字也要同步修改。
-- 文件底部 `<script>`：入场动画和数字递增；只改文字时不要修改这里。
+- `assets/js/lab-site.js`：入场动画和数字递增；只改文字时不要修改这里。
 
 招生数字和待遇具有时效性，更新后应同步核对页面底部免责声明。
 
