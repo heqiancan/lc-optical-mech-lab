@@ -26,6 +26,7 @@ permalink: /
     <div><span class="lab-eyebrow">Research Matrix</span><h2>研究方向</h2></div>
     <p>从精密结构到热流管理，围绕复杂光电系统构建跨学科工程能力。</p>
   </header>
+  {% assign coverage_years = site.data.achievements.end_year | minus: site.data.achievements.start_year | plus: 1 %}
   <div class="lab-grid">
     <article class="lab-card lab-research-card" data-tilt><span class="lab-index">01 / PRECISION</span><h3>精密机械</h3><p>面向光电装备的高可靠机械设计、制造与工程验证。</p><span class="lab-tag">结构设计</span><span class="lab-tag">工程验证</span></article>
     <article class="lab-card lab-research-card" data-tilt><span class="lab-index">02 / OPTOMECH</span><h3>光机结构</h3><p>激光发射系统、光束控制与光机系统总体设计。</p><span class="lab-tag">激光发射</span><span class="lab-tag">光束控制</span></article>
@@ -37,13 +38,18 @@ permalink: /
 
 <section class="lab-section" data-reveal>
   <header class="lab-section-head">
-    <div><span class="lab-eyebrow">Engineering Capability</span><h2>科研与工程能力</h2></div>
-    <p>项目、设备和实验平台信息将在资料确认后逐步补充。</p>
+    <div><span class="lab-eyebrow">Research Outcomes</span><h2>公开成果</h2></div>
+    <p>基于团队公开论文与专利清单整理，完整记录可在科研成果页面查看。</p>
   </header>
   <div class="lab-grid">
-    <article class="lab-card lab-capability"><span class="lab-index">PROJECTS</span><h3>重大工程项目</h3><p>团队长期参与重大工程任务，具体项目内容待公开信息确认后补充。</p></article>
-    <article class="lab-card lab-capability lab-placeholder"><h3>实验与测试平台</h3><p>设备照片、能力指标与典型测试场景待补充。</p></article>
-    <article class="lab-card lab-capability lab-placeholder"><h3>代表性成果</h3><p>专利、奖项与工程应用案例待补充。</p></article>
+    <article class="lab-card lab-metric-card"><span class="yc-number">{{ site.data.achievements.paper_count }}</span><strong>公开论文</strong><p>{{ site.data.achievements.start_year }}–{{ site.data.achievements.end_year }}</p></article>
+    <article class="lab-card lab-metric-card"><span class="yc-number">{{ site.data.achievements.patent_count }}</span><strong>公开专利</strong><p>授权与公开申请</p></article>
+    <article class="lab-card lab-metric-card"><span class="yc-number">{{ site.data.achievements.direction_count }}</span><strong>研究方向</strong><p>光机热流交叉</p></article>
+    <article class="lab-card lab-metric-card"><span class="yc-number">{{ coverage_years }}</span><strong>成果覆盖年</strong><p>持续积累</p></article>
+    {% for paper in site.data.achievements.featured_papers limit:3 %}
+    <article class="lab-card lab-capability"><span class="lab-index">{{ paper.direction }}</span><h3>{{ paper.title }}</h3><p>{{ paper.journal }} · {{ paper.year }}</p><a href="{{ paper.url }}" target="_blank" rel="noopener noreferrer">查看公开来源 ↗</a></article>
+    {% endfor %}
+    <article class="lab-card lab-capability lab-placeholder"><h3>实验与测试平台</h3><p>设备照片、能力指标与典型测试场景待资料确认后补充。</p></article>
   </div>
 </section>
 

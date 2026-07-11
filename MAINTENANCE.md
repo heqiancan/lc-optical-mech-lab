@@ -87,6 +87,17 @@ front matter 下方可以混用三种内容：
 
 条目标识必须唯一。论文页 `_pages/publications.md` 会自动读取该文件，通常不需要逐篇修改页面 HTML。
 
+团队批量成果的原始清单位于公开仓库之外的 `reference_files/论文.csv` 和 `reference_files/专利.csv`。批量更新时应：
+
+1. 保留原始 CSV，不直接把它复制到网站资源目录。
+2. 论文按 DOI 或标准化标题去重，只发布已公开检索的记录。
+3. 有 DOI 时填写 `doi`；没有 DOI 时将公开来源填写到 `html` 字段，al-folio 才会显示链接按钮。
+4. 专利只发布已公开检索记录，并区分“已授权”和“公开申请”。
+5. 同步更新 `_data/achievements.yml` 的统计和精选论文，以及 `_data/patents.yml` 的公开专利。
+6. 构建后核对首页、研究方向页和科研成果页的数量完全一致。
+
+当前方向统计以 `_data/achievements.yml` 为网站数据源；不要只在页面正文中手工修改数字。
+
 ### 修改遇超个人页
 
 编辑 `_pages/yu_chao.md`：

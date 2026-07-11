@@ -20,6 +20,12 @@ nav_order: 2
   <article class="lab-card lab-research-card"><span class="lab-index">05 / ENGINEERING</span><h3>工程优化与验证</h3><p>结合结构、热、流体多物理场分析，开展参数优化、试验验证和工程集成。</p><span class="lab-tag">多物理场</span><span class="lab-tag">试验验证</span></article>
 </div></section>
 
+<section class="lab-section" data-reveal><header class="lab-section-head"><div><span class="lab-eyebrow">Evidence Map</span><h2>方向成果分布</h2></div><p>共 {{ site.data.achievements.paper_count }} 篇公开论文，按成果清单中的项目支撑方向统计。</p></header><div class="lab-grid">
+  {% for direction in site.data.achievements.directions %}
+  <article class="lab-card lab-direction-stat"><span class="yc-number">{{ direction.count }}</span><h3>{{ direction.name }}</h3><a href="{{ '/publications/' | relative_url }}">查看相关成果 →</a></article>
+  {% endfor %}
+</div></section>
+
 <section class="lab-cta" data-reveal><span class="lab-eyebrow">Collaborate</span><h2>连接研究与工程现场</h2><p>欢迎围绕精密机械、光机热集成和复杂热流问题开展学术交流与工程合作。</p><div class="lab-actions"><a class="lab-beam-button" href="{{ '/publications/' | relative_url }}">查看相关成果</a><a class="lab-button-secondary" href="{{ '/join/' | relative_url }}" style="color:var(--lab-ink)!important;border-color:var(--lab-border)">加入我们</a></div></section>
 
 </div>

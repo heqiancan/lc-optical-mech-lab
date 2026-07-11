@@ -360,6 +360,22 @@ header .navbar .nav-link.active {
   min-height: 180px;
 }
 
+.lab-metric-card {
+  grid-column: span 3;
+  min-height: 155px;
+  text-align: center;
+}
+
+.lab-featured-result,
+.lab-direction-stat {
+  grid-column: span 4;
+}
+
+.lab-featured-result h3 {
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
 .lab-placeholder {
   border-style: dashed;
 }
@@ -469,6 +485,49 @@ header .navbar .nav-link.active {
   background: color-mix(in srgb, var(--lab-surface-solid) 82%, transparent);
 }
 
+.lab-patent-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.lab-patent-card h3 {
+  font-size: 1.15rem;
+}
+
+.lab-patent-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--lab-muted);
+  font-size: 0.8rem;
+}
+
+.lab-patent-number {
+  color: var(--lab-cyan) !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.82rem;
+}
+
+.lab-patent-card dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 0.75rem;
+  margin: 1rem 0;
+  font-size: 0.84rem;
+}
+
+.lab-patent-card dt {
+  color: var(--lab-muted);
+  font-weight: 600;
+}
+
+.lab-patent-card dd {
+  margin: 0;
+  color: var(--lab-ink);
+}
+
 .yc-profile {
   grid-column: span 7;
 }
@@ -548,6 +607,9 @@ header .navbar .nav-link.active {
   .lab-research-card:nth-child(4),
   .lab-research-card:nth-child(5),
   .lab-capability,
+  .lab-metric-card,
+  .lab-featured-result,
+  .lab-direction-stat,
   .lab-person,
   .lab-profile-card,
   .lab-process-card,
@@ -579,6 +641,9 @@ header .navbar .nav-link.active {
   .lab-research-card:nth-child(4),
   .lab-research-card:nth-child(5),
   .lab-capability,
+  .lab-metric-card,
+  .lab-featured-result,
+  .lab-direction-stat,
   .lab-person,
   .lab-profile-card,
   .lab-process-card,
@@ -586,6 +651,10 @@ header .navbar .nav-link.active {
   .yc-panel,
   .yc-stat {
     grid-column: span 12;
+  }
+
+  .lab-patent-list {
+    grid-template-columns: 1fr;
   }
 
   .yc-profile-wrap {
