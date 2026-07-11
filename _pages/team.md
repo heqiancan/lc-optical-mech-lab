@@ -20,12 +20,16 @@ nav_order: 3
 <div style="clear:both"></div>
 
 ## 薛向尧 / Xiangyao Xue
+<img src="{{ '/assets/img/team/xue-xiangyao.jpeg' | relative_url }}" alt="薛向尧" style="width:150px;border-radius:12px;float:right;margin:0 0 1rem 1.5rem;">
+
 博士招生导师（以当年官方招生目录为准），招生专业为机械制造及其自动化。主要研究光学精密机械结构总体设计与分析。
 
 - 博士：中国科学院长春光学精密机械与物理研究所（2008–2011）
 - 硕士：中国科学院长春光学精密机械与物理研究所（2005–2008）
 - 学士：桂林电子科技大学（2001–2005）
 - 招生联系请参阅当年中国科学院长春光机所官方招生目录。
+
+<div style="clear:both"></div>
 
 ## 遇超 / Chao Yu
 <img src="{{ '/assets/img/team/yu-chao.jpg' | relative_url }}" alt="遇超" style="width:150px;border-radius:12px;float:right;margin:0 0 1rem 1.5rem;">
