@@ -8,6 +8,7 @@ nav_order: 3
 ---
 
 ## 邵帅 / Shuai Shao
+
 <img src="{{ '/assets/img/team/shao-shuai.png' | relative_url }}" alt="邵帅" style="width:150px;border-radius:12px;float:right;margin:0 0 1rem 1.5rem;">
 
 博士生导师（以当年官方招生目录为准），招生专业为机械制造及其自动化。主要研究精密机械结构设计、激光发射系统结构设计与光束控制；主持和参与完成十余项重大工程项目，获授权发明专利 5 项、实用新型专利 2 项并应用于工程项目。
@@ -20,6 +21,7 @@ nav_order: 3
 <div style="clear:both"></div>
 
 ## 薛向尧 / Xiangyao Xue
+
 <img src="{{ '/assets/img/team/xue-xiangyao.jpeg' | relative_url }}" alt="薛向尧" style="width:150px;border-radius:12px;float:right;margin:0 0 1rem 1.5rem;">
 
 博士招生导师（以当年官方招生目录为准），招生专业为机械制造及其自动化。主要研究光学精密机械结构总体设计与分析。
@@ -31,12 +33,14 @@ nav_order: 3
 
 <div style="clear:both"></div>
 
-## 遇超 / Chao Yu
+## [遇超 / Chao Yu]({{ '/team/yu-chao/' | relative_url }})
+
 <img src="{{ '/assets/img/team/yu-chao.jpg' | relative_url }}" alt="遇超" style="width:150px;border-radius:12px;float:right;margin:0 0 1rem 1.5rem;">
 
 硕士生导师，研究方向包括光机系统设计、流体湍流演化和表面强化传热，招生专业涵盖机械制造及其自动化、流体机械及工程、工程热物理。
 
 - 邮箱：[yuchao@ciomp.ac.cn](mailto:yuchao@ciomp.ac.cn)
+- [站内导师个人主页]({{ '/team/yu-chao/' | relative_url }})
 - [UCAS 官方导师主页](https://people.ucas.ac.cn/~yuchao)
 - 高级工程师，中国科学院长春光学精密机械与物理研究所（2024–2025）
 - 工程师，中国科学院长春光学精密机械与物理研究所（2020–2024）
