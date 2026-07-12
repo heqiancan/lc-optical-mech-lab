@@ -16,11 +16,11 @@ nav: false
   <aside class="lab-card yc-callout"><span class="lab-index">OPPORTUNITY</span><h3>欢迎加入团队</h3><p>面向国家重大需求，在真实工程任务中理解问题、建立模型、完成设计与验证。</p><p>欢迎对机械、热流体和光电工程有兴趣，愿意动手实践的同学联系。</p></aside>
 </div></section>
 
-<section class="lab-section" data-reveal><header class="lab-section-head"><div><span class="lab-eyebrow">Mentorship & Outcomes</span><h2>培养与成果</h2></div><p>以下数据依据现有招生宣传资料整理，具体说明见页面底部。</p></header><div class="lab-grid">
-  <article class="lab-card yc-stat"><span class="yc-number" data-count="100" data-suffix="%">100%</span><strong>按时毕业率</strong><p>课题组培养情况</p></article>
-  <article class="lab-card yc-stat"><span class="yc-number" data-count="2" data-suffix=" 篇">2 篇</span><strong>SCI 一区论文</strong><p>另有二区论文 6 篇</p></article>
-  <article class="lab-card yc-stat"><span class="yc-number" data-count="5" data-suffix=" 年">5 年</span><strong>硕博连读学制</strong><p>按培养政策执行</p></article>
-  <article class="lab-card yc-stat"><span class="yc-number" data-count="5000" data-prefix="≥ " data-suffix=" 元/月">≥ 5000 元/月</span><strong>博士待遇</strong><p>硕士至少 2700 元/月</p></article>
+<section class="lab-section" data-reveal><header class="lab-section-head"><div><span class="lab-eyebrow">Mentorship & Outcomes</span><h2>培养与待遇</h2></div><p>以下数据依据现有招生宣传资料整理，具体说明见页面底部。</p></header><div class="lab-grid">
+  <article class="lab-card yc-stat"><div class="yc-value"><span class="lab-index">论文成果</span></div><strong>SCI 一区论文 2 篇</strong><p>SCI 二区论文 6 篇</p><p>其他论文若干</p></article>
+  <article class="lab-card yc-stat"><div class="yc-value"><span class="lab-index">绝不延毕</span></div><strong>硕士研究生3年</strong><strong>硕博连读5年</strong><strong>直博5年制</strong></article>
+  <article class="lab-card yc-stat"><div class="yc-value"><span class="lab-index">薪资待遇</span></div><strong>硕士≧2700元/月</strong><strong>博士≧5000元/月</strong><p>随工作量调整</p></article>
+  <article class="lab-card yc-stat"><div class="yc-value"><span class="lab-index">亲自指导</span></div><strong>100%包发表SCI论文</strong><strong>毕业即有工作经验</strong></article>
 </div></section>
 
 <section class="lab-section" data-reveal><div class="lab-grid">

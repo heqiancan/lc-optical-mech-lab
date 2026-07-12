@@ -10,12 +10,22 @@ nav_order: 5
 <link rel="stylesheet" href="{{ '/assets/css/lab-site.css' | relative_url }}">
 <div class="lab-shell">
 
-<header class="lab-page-hero" data-reveal><span class="lab-eyebrow">Join the Laboratory</span><h1>与复杂工程问题<br>共同成长</h1><p>机械室面向精密机械、光机结构、热管理、流体仿真与系统集成开展研究生培养，欢迎相关专业学生报考与联系。</p></header>
+<section class="lab-hero" aria-labelledby="join-hero-title">
+  <video class="lab-hero-video" src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_074625_a81f018a-956b-43fb-9aee-4d1508e30e6a.mp4" muted autoplay loop playsinline preload="auto" aria-hidden="true"></video>
+  <div class="lab-hero-content">
+    <span class="lab-eyebrow">Join the Laboratory</span>
+    <h1 id="join-hero-title">与复杂工程问题<br>共同成长</h1>
+    <p class="lab-hero-lead">机械室面向精密机械、光机结构、热管理、流体仿真与系统集成开展研究生培养，欢迎相关专业学生报考与联系。</p>
+  </div>
+</section>
 
 <section class="lab-section" data-reveal><header class="lab-section-head"><div><span class="lab-eyebrow">Research Fields</span><h2>招生研究方向</h2></div><p>具体招生专业和导师资格以当年官方招生目录为准。</p></header><div class="lab-grid">
-  <article class="lab-card lab-research-card"><span class="lab-index">01</span><h3>精密机械与光机结构</h3><p>精密机械设计与制造、光机结构设计、装调测试与系统集成。</p></article>
-  <article class="lab-card lab-research-card"><span class="lab-index">02</span><h3>热管理与强化传热</h3><p>高功率光电系统热管理、强化传热和换热结构优化。</p></article>
-  <article class="lab-card lab-research-card"><span class="lab-index">03</span><h3>流体力学与 CFD</h3><p>复杂流动分析、CFD 仿真与多物理场工程优化。</p></article>
+  <article class="lab-card lab-research-card"><a class="lab-card-link" href="{{ '/research/' | relative_url }}#beam" aria-label="查看「激光发射系统与光束控制」详细介绍"></a><span class="lab-index">01</span><h3>激光发射系统与光束控制</h3><p>激光发射系统结构设计、光束控制与光机系统总体设计。</p></article>
+  <article class="lab-card lab-research-card"><a class="lab-card-link" href="{{ '/research/' | relative_url }}#thermal" aria-label="查看「热管理与强化传热」详细介绍"></a><span class="lab-index">02</span><h3>热管理与强化传热</h3><p>高功率光电系统热管理、强化传热和换热结构优化。</p></article>
+  <article class="lab-card lab-research-card"><a class="lab-card-link" href="{{ '/research/' | relative_url }}#optomech" aria-label="查看「精密光机结构设计」详细介绍"></a><span class="lab-index">03</span><h3>精密光机结构设计</h3><p>精密光机结构设计、制造与工程验证。</p></article>
+  <article class="lab-card lab-research-card"><a class="lab-card-link" href="{{ '/research/' | relative_url }}#metrology" aria-label="查看「测量装调与成像验证」详细介绍"></a><span class="lab-index">04</span><h3>测量装调与成像验证</h3><p>光电系统测量装调与成像质量验证。</p></article>
+  <article class="lab-card lab-research-card"><a class="lab-card-link" href="{{ '/research/' | relative_url }}#cfd" aria-label="查看「流体仿真与工程优化」详细介绍"></a><span class="lab-index">05</span><h3>流体仿真与工程优化</h3><p>复杂流动分析、CFD 仿真与多物理场工程优化。</p></article>
+  <article class="lab-card lab-research-card"><a class="lab-card-link" href="{{ '/research/' | relative_url }}#system" aria-label="查看「系统集成与工程验证」详细介绍"></a><span class="lab-index">06</span><h3>系统集成与工程验证</h3><p>结构优化设计、装调测试与系统级工程集成。</p></article>
 </div></section>
 
 <section class="lab-section" data-reveal><header class="lab-section-head"><div><span class="lab-eyebrow">Application</span><h2>申请流程</h2></div></header><div class="lab-grid">
@@ -24,9 +34,16 @@ nav_order: 5
   <article class="lab-card lab-process-card"><span class="lab-index">STEP 03</span><h3>邮件联系</h3><p>在邮件中说明申请专业、研究兴趣和个人背景，并附上材料。</p></article>
 </div></section>
 
+<section class="lab-section" data-reveal><header class="lab-section-head"><div><span class="lab-eyebrow">Faculty</span><h2>导师信息</h2></div></header><div class="lab-grid">
+  <article class="lab-card lab-profile-card"><div class="lab-profile-head"><img src="{{ '/assets/img/team/shao-shuai.png' | relative_url }}" alt="邵帅"><h3>邵帅 研究员</h3><h3>Shuai Shao</h3></div><p><strong>博士生导师</strong>（以当年官方招生目录为准），招生专业为机械制造及其自动化。主要研究精密机械结构设计、激光发射系统结构设计与光束控制。</p><p>主持和参与完成十余项重大工程项目，获授权发明专利 5 项、实用新型专利 2 项并应用于工程项目。</p><p><a href="mailto:shaoshuaiciomp@163.com">邮件联系</a> · <a href="https://people.ucas.ac.cn/~shaoshuai">UCAS 官方主页 ↗</a></p></article>
+  <article class="lab-card lab-profile-card"><div class="lab-profile-head"><img src="{{ '/assets/img/team/xue-xiangyao.jpeg' | relative_url }}" alt="薛向尧"><h3>薛向尧 研究员</h3><h3>Xiangyao Xue</h3></div><p><strong>博士生导师</strong>（以当年官方招生目录为准），招生专业为机械制造及其自动化。主要研究光学精密机械结构总体设计与分析。</p><p>博士、硕士毕业于中国科学院长春光学精密机械与物理研究所，本科毕业于桂林电子科技大学。</p><p><a href="{{ '/join/' | relative_url }}">查看招生说明 →</a></p></article>
+  <article class="lab-card lab-profile-card"><a class="lab-person-link" href="{{ '/team/yu-chao/' | relative_url }}" aria-label="查看遇超导师个人主页"></a><div class="lab-profile-head"><img src="{{ '/assets/img/team/yu-chao.jpg' | relative_url }}" alt="遇超"><h3>遇超 高级工程师</h3><h3>Chao Yu</h3></div><p><strong>硕士生导师、高级工程师</strong>，主要研究光机系统设计、流体湍流演化和表面强化传热。</p><p>招生专业涵盖机械制造及其自动化、流体机械及工程、工程热物理。</p><p><a href="mailto:yuchao@ciomp.ac.cn">邮件联系</a> · <a href="https://people.ucas.ac.cn/~yuchao">UCAS 官方主页 ↗</a></p></article>
+</div></section>
+
 <section class="lab-section" data-reveal><header class="lab-section-head"><div><span class="lab-eyebrow">Contact</span><h2>联系方式</h2></div></header><div class="lab-grid">
-  <article class="lab-card lab-contact-card"><span class="lab-index">SHAO SHUAI</span><h3>邵帅</h3><p>精密机械结构、激光发射系统结构与光束控制</p><a class="lab-beam-button" href="mailto:shaoshuaiciomp@163.com">shaoshuaiciomp@163.com</a></article>
-  <article class="lab-card lab-contact-card"><span class="lab-index">YU CHAO</span><h3>遇超</h3><p>光机系统、流体湍流与表面强化传热</p><a class="lab-beam-button" href="mailto:yuchao@ciomp.ac.cn">yuchao@ciomp.ac.cn</a></article>
+  <article class="lab-card lab-contact-card"><span class="lab-index">SHUAI SHAO</span><h3>邵帅 研究员</h3><p>精密机械结构、激光发射系统结构与光束控制</p><a class="lab-beam-button" href="mailto:shaoshuaiciomp@163.com">shaoshuaiciomp@163.com</a></article>
+  <article class="lab-card lab-contact-card"><span class="lab-index">CHAO YU</span><h3>遇超 高级工程师</h3><p>光机系统、流体湍流与表面强化传热</p><a class="lab-beam-button" href="mailto:yuchao@ciomp.ac.cn">yuchao@ciomp.ac.cn</a></article>
+  <article class="lab-card lab-contact-card"><span class="lab-index">QIANCAN HE</span><h3>何乾灿</h3><p>博士生 · 电话 17773003830（微信同号）</p><a class="lab-beam-button" href="mailto:heqiancan@foxmail.com">heqiancan@foxmail.com</a></article>
 </div></section>
 
 <aside class="lab-card" data-reveal><strong>信息说明：</strong><p>申请材料、报名时间、招生名额、导师资格及培养政策均以当年中国科学院大学和中国科学院长春光机所官方通知为准。薛向尧导师招生信息请参阅当年官方招生目录。</p></aside>
