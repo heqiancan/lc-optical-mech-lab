@@ -475,6 +475,11 @@ html[data-theme="dark"] header .navbar .nav-link:active {
   margin-top: 1.4rem;
 }
 
+.lab-hero .lab-actions .lab-beam-button,
+.lab-hero .lab-actions .lab-button-secondary {
+  min-width: 200px;
+}
+
 .lab-research-card {
   grid-column: span 4;
   min-height: 190px;
@@ -1128,4 +1133,101 @@ html[data-theme="dark"] header .navbar .nav-link:active {
     opacity: 1;
     transform: none;
   }
+}
+
+.lab-popup-backdrop {
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(3, 11, 24, 0.6);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+  visibility: hidden;
+}
+
+.lab-popup-backdrop[hidden] {
+  display: none;
+}
+
+.lab-popup-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lab-popup {
+  position: relative;
+  overflow: hidden;
+  width: min(92vw, 460px);
+  padding: clamp(1.75rem, 4vw, 2.5rem);
+  border: 1px solid var(--lab-border);
+  border-radius: var(--lab-radius);
+  background: var(--lab-surface);
+  box-shadow: var(--lab-shadow);
+  backdrop-filter: blur(24px);
+  transform: scale(0.94);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.lab-popup-backdrop.is-open .lab-popup {
+  transform: scale(1);
+}
+
+.lab-popup::after {
+  position: absolute;
+  z-index: -1;
+  inset: auto -35% -60% 20%;
+  height: 200px;
+  content: "";
+  background: radial-gradient(circle, rgba(114, 105, 255, 0.22), transparent 68%);
+  pointer-events: none;
+}
+
+.lab-popup h2 {
+  margin: 0.7rem 0 0.6rem;
+  color: var(--lab-ink) !important;
+  font-size: clamp(1.4rem, 3.4vw, 1.8rem);
+  font-weight: 900;
+}
+
+.lab-popup p {
+  margin: 0;
+  color: var(--lab-muted) !important;
+  line-height: 1.6;
+}
+
+.lab-popup .lab-actions {
+  margin-top: 1.5rem;
+}
+
+.lab-popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--lab-border);
+  border-radius: 50%;
+  background: var(--lab-surface-solid);
+  color: var(--lab-muted) !important;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.lab-popup-close:hover {
+  border-color: rgba(57, 217, 255, 0.5);
+  color: var(--lab-cyan) !important;
 }

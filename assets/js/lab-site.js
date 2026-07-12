@@ -309,6 +309,41 @@
     if (dir) scrollToTarget(dir);
   }
 
+  function initRecruitPopup() {
+    const backdrop = document.querySelector("[data-popup-backdrop]");
+    if (!backdrop) return;
+
+    const dismissKey = "lab-popup-yuchao-2026";
+    if (localStorage.getItem(dismissKey)) return;
+
+    const openPopup = () => {
+      backdrop.hidden = false;
+      requestAnimationFrame(() => backdrop.classList.add("is-open"));
+    };
+
+    const closePopup = () => {
+      backdrop.classList.remove("is-open");
+      localStorage.setItem(dismissKey, "1");
+      window.setTimeout(() => {
+        backdrop.hidden = true;
+      }, reducedMotion ? 0 : 300);
+    };
+
+    backdrop.querySelectorAll("[data-popup-close]").forEach((el) => {
+      el.addEventListener("click", closePopup);
+    });
+
+    backdrop.addEventListener("click", (event) => {
+      if (event.target === backdrop) closePopup();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && backdrop.classList.contains("is-open")) closePopup();
+    });
+
+    window.setTimeout(openPopup, 600);
+  }
+
   function initPublicationSections() {
     const collapsedHeight = 640;
     document.querySelectorAll(".lab-publications .publications").forEach((box) => {
@@ -363,6 +398,7 @@
     animateNumbers();
     initPublicationJump();
     initPublicationSections();
+    initRecruitPopup();
     cardTilt();
     initOpticalField();
     initLightRaysField();

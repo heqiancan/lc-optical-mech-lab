@@ -8,6 +8,20 @@ nav_order: 5
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/lab-site.css' | relative_url }}">
+
+<div class="lab-popup-backdrop" data-popup-backdrop hidden>
+  <div class="lab-popup" role="dialog" aria-modal="true" aria-labelledby="recruit-popup-title">
+    <button type="button" class="lab-popup-close" data-popup-close aria-label="关闭弹窗">&times;</button>
+    <span class="lab-eyebrow">限时招生</span>
+    <h2 id="recruit-popup-title">遇超老师招收开山大弟子！</h2>
+    <p>遇超老师首次面向研究生招生，名额有限，欢迎有志于光机系统设计、流体湍流与强化传热方向的同学了解详情。</p>
+    <div class="lab-actions">
+      <a class="lab-beam-button" href="{{ '/team/yu-chao/' | relative_url }}">查看招生详情&nbsp; →</a>
+      <button type="button" class="lab-button-secondary" data-popup-close style="color:var(--lab-ink)!important;border-color:var(--lab-border)">暂不考虑</button>
+    </div>
+  </div>
+</div>
+
 <div class="lab-shell">
 
 <section class="lab-hero" aria-labelledby="join-hero-title">
