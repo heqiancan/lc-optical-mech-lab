@@ -29,7 +29,7 @@ nav: false
   <article class="lab-card yc-panel"><span class="lab-index">EXPECTATIONS</span><h3>我们期待这样的你</h3><ul><li>性格开朗，好学上进</li><li>对科研方向有清晰认知</li><li>具有较强的动手能力</li><li>对仿真分析或工程实践感兴趣</li></ul></article>
 </div></section>
 
-<section class="lab-cta" data-reveal><span class="lab-eyebrow">Apply Now</span><h2>加入我们，未来可期</h2><p>请准备个人简历、成绩单，以及科研或竞赛经历说明。欢迎有志于将机械、热流体、光电工程与国家重大需求相结合的同学申请。</p><div class="lab-actions"><a class="lab-beam-button" href="mailto:yuchao@ciomp.ac.cn?subject=申请加入遇超导师课题组">立即申请&nbsp; →</a><a class="lab-button-secondary" href="{{ '/team/' | relative_url }}" style="color:var(--lab-ink)!important;border-color:var(--lab-border)">返回导师团队</a></div></section>
+<section class="lab-cta" data-reveal><span class="lab-eyebrow">Apply Now</span><h2>加入我们，未来可期</h2><p>请准备个人简历、成绩单，以及科研或竞赛经历说明。欢迎有志于将机械、热流体、光电工程与国家重大需求相结合的同学申请。</p><div class="lab-actions"><a class="lab-beam-button" href="mailto:yuchao@ciomp.ac.cn?subject=申请加入遇超导师课题组">立即申请&nbsp; →</a><a class="lab-button-secondary" href="{{ '/team/' | relative_url }}" style="color:var(--lab-ink)!important;border-color:var(--lab-border)">返回团队成员</a></div></section>
 
 <aside class="lab-card" data-reveal style="margin-top:1.5rem"><strong>信息说明：</strong><p>本页依据现有招生宣传资料整理。招生名额、录取要求、培养学制、论文成果统计及待遇标准可能随政策和实际情况调整，具体以当年中国科学院大学招生政策、培养方案及与导师沟通结果为准。</p></aside>
 
