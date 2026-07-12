@@ -62,8 +62,7 @@
     const canvas = document.querySelector("[data-optical-canvas]");
     if (!canvas || reducedMotion) return;
 
-    const mobile = window.matchMedia("(max-width: 720px), (pointer: coarse)").matches;
-    if (mobile || !window.WebGLRenderingContext) return;
+    if (!window.WebGLRenderingContext) return;
 
     try {
       const module = await import("https://cdn.jsdelivr.net/npm/threejs-components@0.0.19/build/cursors/tubes1.min.js");
@@ -91,8 +90,7 @@
     const canvas = document.querySelector("[data-rays-canvas]");
     if (!canvas || reducedMotion) return;
 
-    const mobile = window.matchMedia("(max-width: 720px), (pointer: coarse)").matches;
-    if (mobile || !window.WebGLRenderingContext) return;
+    if (!window.WebGLRenderingContext) return;
 
     try {
       const { Renderer, Program, Triangle, Mesh } = await import("https://cdn.jsdelivr.net/npm/ogl@0.0.116/+esm");

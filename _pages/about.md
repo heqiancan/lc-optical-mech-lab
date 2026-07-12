@@ -10,6 +10,7 @@ permalink: /
 
 <section class="lab-hero" aria-labelledby="home-title">
   <canvas class="lab-optical-canvas" data-optical-canvas aria-hidden="true"></canvas>
+  <img class="lab-hero-logo" src="{{ '/assets/img/logo-icon.png' | relative_url }}" alt="" aria-hidden="true">
   <div class="lab-hero-content">
     <span class="lab-eyebrow">CIOMP · Optoelectronic Countermeasure</span>
     <h1 id="home-title">光电对抗研究部<br><span>精密机械室</span></h1>
