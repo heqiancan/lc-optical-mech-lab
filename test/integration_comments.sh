@@ -10,13 +10,27 @@ cleanup() {
 }
 trap cleanup EXIT
 
-cat >"${tmp_override}" <<'YAML'
-giscus:
-  repo: alshedivat/al-folio
-  repo_id: R_kgDOExample
-  category: Comments
-  category_id: DIC_kwDOExample
-YAML
+# This site's _config.yml excludes _posts/ (it publishes no demo blog content),
+# so re-include just that path here to exercise the giscus/disqus wiring
+# against the starter's example posts, leaving the rest of the exclude list
+# (e.g. assets/jupyter/, which needs a local jupyter binary) untouched.
+ruby -rpsych -e "
+cfg = Psych.unsafe_load_file('_config.yml')
+excludes = Array(cfg['exclude']).reject { |p| p == '_posts/' }
+override = {
+  'giscus' => {
+    'repo' => 'alshedivat/al-folio',
+    'repo_id' => 'R_kgDOExample',
+    'category' => 'Comments',
+    'category_id' => 'DIC_kwDOExample',
+  },
+  # This site leaves disqus_shortname blank (it doesn't use Disqus), so set a
+  # dummy shortname here to exercise the al_comments disqus wiring.
+  'disqus_shortname' => 'al-folio-test',
+  'exclude' => excludes,
+}
+puts override.to_yaml
+" >"${tmp_override}"
 
 bundle exec jekyll build --config "_config.yml,${tmp_override}" -d "${tmp_site}" >/dev/null
 
