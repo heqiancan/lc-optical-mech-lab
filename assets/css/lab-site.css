@@ -420,6 +420,13 @@ header .navbar .nav-link.active {
   text-align: center;
 }
 
+.lab-metric-card strong {
+  display: block;
+  margin: 0.35rem 0 0.15rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
 .lab-featured-result,
 .lab-direction-stat {
   grid-column: span 4;
