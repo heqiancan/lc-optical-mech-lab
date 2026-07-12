@@ -40,10 +40,13 @@ nav_order: 5
   <article class="lab-card lab-profile-card"><a class="lab-person-link" href="{{ '/team/yu-chao/' | relative_url }}" aria-label="查看遇超导师个人主页"></a><div class="lab-profile-head"><img src="{{ '/assets/img/team/yu-chao.jpg' | relative_url }}" alt="遇超"><h3>遇超 高级工程师</h3><h3>Chao Yu</h3></div><p><strong>硕士生导师、高级工程师</strong>，主要研究光机系统设计、流体湍流演化和表面强化传热。</p><p>招生专业涵盖机械制造及其自动化、流体机械及工程、工程热物理。</p><p><a href="mailto:yuchao@ciomp.ac.cn">邮件联系</a> · <a href="https://people.ucas.ac.cn/~yuchao">UCAS 官方主页 ↗</a></p></article>
 </div></section>
 
-<section class="lab-section" data-reveal><header class="lab-section-head"><div><span class="lab-eyebrow">Contact</span><h2>联系方式</h2></div></header><div class="lab-grid">
-  <article class="lab-card lab-contact-card"><span class="lab-index">SHUAI SHAO</span><h3>邵帅 研究员</h3><p>精密机械结构、激光发射系统结构与光束控制</p><a class="lab-beam-button" href="mailto:shaoshuaiciomp@163.com">shaoshuaiciomp@163.com</a></article>
-  <article class="lab-card lab-contact-card"><span class="lab-index">CHAO YU</span><h3>遇超 高级工程师</h3><p>光机系统、流体湍流与表面强化传热</p><a class="lab-beam-button" href="mailto:yuchao@ciomp.ac.cn">yuchao@ciomp.ac.cn</a></article>
-  <article class="lab-card lab-contact-card"><span class="lab-index">QIANCAN HE</span><h3>何乾灿</h3><p>博士生 · 电话 17773003830（微信同号）</p><a class="lab-beam-button" href="mailto:heqiancan@foxmail.com">heqiancan@foxmail.com</a></article>
+<section class="lab-section" data-reveal><header class="lab-section-head"><div><span class="lab-eyebrow">Contact</span><h2>导师联系方式</h2></div></header><div class="lab-grid">
+  <article class="lab-card lab-contact-card"><div class="lab-contact-body"><img class="lab-contact-avatar" src="{{ '/assets/img/team/shao-shuai.png' | relative_url }}" alt="邵帅"><div class="lab-contact-info"><span class="lab-index">SHUAI SHAO</span><h3>邵帅 研究员</h3><p>精密机械结构、激光发射系统结构与光束控制</p><a class="lab-beam-button" href="mailto:shaoshuaiciomp@163.com">shaoshuaiciomp@163.com</a></div></div></article>
+  <article class="lab-card lab-contact-card"><div class="lab-contact-body"><img class="lab-contact-avatar" src="{{ '/assets/img/team/yu-chao.jpg' | relative_url }}" alt="遇超"><div class="lab-contact-info"><span class="lab-index">CHAO YU</span><h3>遇超 高级工程师</h3><p>光机系统、流体湍流与表面强化传热</p><a class="lab-beam-button" href="mailto:yuchao@ciomp.ac.cn">yuchao@ciomp.ac.cn</a></div></div></article>
+</div></section>
+
+<section class="lab-section" data-reveal><header class="lab-section-head"><div><span class="lab-eyebrow">Enquiries</span><h2>咨询方式</h2></div><p>报考、材料准备等相关问题欢迎邮件咨询。</p></header><div class="lab-grid">
+  <article class="lab-card lab-contact-card"><div class="lab-contact-body"><img class="lab-contact-avatar" src="{{ '/assets/img/team/qiancan.jpeg' | relative_url }}" alt="何乾灿"><div class="lab-contact-info"><span class="lab-index">QIANCAN HE</span><h3>何乾灿</h3><p>博士生 · 招生咨询</p><a class="lab-beam-button" href="mailto:heqiancan24@mails.ucas.ac.cn">heqiancan24@mails.ucas.ac.cn</a></div></div></article>
 </div></section>
 
 <aside class="lab-card" data-reveal><strong>信息说明：</strong><p>申请材料、报名时间、招生名额、导师资格及培养政策均以当年中国科学院大学和中国科学院长春光机所官方通知为准。薛向尧导师招生信息请参阅当年官方招生目录。</p></aside>

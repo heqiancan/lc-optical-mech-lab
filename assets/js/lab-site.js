@@ -284,6 +284,19 @@
     }
   }
 
+  function highlightActiveNav() {
+    const current = window.location.pathname.replace(/index\.html$/, "");
+    document.querySelectorAll("header .navbar .nav-link").forEach((link) => {
+      let linkPath;
+      try {
+        linkPath = new URL(link.href, window.location.origin).pathname.replace(/index\.html$/, "");
+      } catch {
+        return;
+      }
+      if (linkPath === current) link.classList.add("active");
+    });
+  }
+
   function cardTilt() {
     if (reducedMotion || window.matchMedia("(pointer: coarse)").matches) return;
     document.querySelectorAll("[data-tilt]").forEach((card) => {
@@ -303,6 +316,7 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     initHomeBrand();
+    highlightActiveNav();
     revealContent();
     animateNumbers();
     cardTilt();

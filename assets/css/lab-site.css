@@ -80,13 +80,34 @@ header .navbar > * {
 }
 
 header .navbar .nav-link {
+  position: relative;
   padding: 0.65rem 1.15rem;
   border-radius: 999px;
   font-size: 1.05rem;
   font-weight: 700;
   transition:
     color 0.2s ease,
-    background 0.2s ease;
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+header .navbar .nav-link.active::after {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  content: "";
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: var(--lab-cyan);
+  box-shadow: 0 0 6px color-mix(in srgb, var(--lab-cyan) 70%, transparent);
+}
+
+html[data-theme="dark"] header .navbar .nav-link.active::after {
+  background: var(--lab-cyan-bright);
+  box-shadow: 0 0 6px color-mix(in srgb, var(--lab-cyan-bright) 70%, transparent);
 }
 
 header .navbar .navbar-brand {
@@ -99,7 +120,36 @@ header .navbar .navbar-brand {
 header .navbar .nav-link:hover,
 header .navbar .nav-link.active {
   color: var(--lab-cyan) !important;
-  background: color-mix(in srgb, var(--lab-cyan) 10%, transparent);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--lab-cyan) 16%, white 84%), color-mix(in srgb, var(--lab-cyan) 8%, transparent));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.75),
+    inset 0 -1px 1px rgba(3, 22, 45, 0.06),
+    0 6px 14px rgba(14, 165, 198, 0.22),
+    0 1px 2px rgba(3, 22, 45, 0.08);
+  transform: translateY(-1px);
+}
+
+header .navbar .nav-link:active {
+  box-shadow:
+    inset 0 1px 3px rgba(3, 22, 45, 0.16),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.4);
+  transform: translateY(0);
+}
+
+html[data-theme="dark"] header .navbar .nav-link:hover,
+html[data-theme="dark"] header .navbar .nav-link.active {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--lab-cyan-bright) 22%, transparent), color-mix(in srgb, var(--lab-cyan-bright) 8%, transparent));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.3),
+    0 6px 16px rgba(57, 217, 255, 0.22),
+    0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] header .navbar .nav-link:active {
+  box-shadow:
+    inset 0 1px 3px rgba(0, 0, 0, 0.4),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .lab-shell {
@@ -423,7 +473,7 @@ header .navbar .nav-link.active {
 .lab-metric-card strong {
   display: block;
   margin: 0.35rem 0 0.15rem;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -635,6 +685,42 @@ header .navbar .nav-link.active {
 
 .lab-contact-card {
   grid-column: span 6;
+}
+
+.lab-contact-body {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.lab-contact-avatar {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.lab-contact-info h3 {
+  margin: 0.15rem 0 0.3rem;
+}
+
+.lab-contact-info p {
+  margin: 0 0 0.75rem;
+}
+
+.lab-avatar-placeholder {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--lab-cyan), var(--lab-violet));
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 
 .lab-publications .publications {

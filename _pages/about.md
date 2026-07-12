@@ -46,7 +46,7 @@ permalink: /
     <article class="lab-card lab-metric-card"><a class="lab-card-link" href="{{ '/publications/all/' | relative_url }}" aria-label="查看全部论文列表"></a><span class="yc-number">{{ site.data.achievements.paper_count }}</span><strong>公开论文</strong><p>{{ site.data.achievements.start_year }}–{{ site.data.achievements.end_year }}</p></article>
     <article class="lab-card lab-metric-card"><a class="lab-card-link" href="{{ '/publications/' | relative_url }}#patents" aria-label="查看授权专利与公开申请"></a><span class="yc-number">{{ site.data.achievements.patent_count }}</span><strong>公开专利</strong><p>授权与公开申请</p></article>
     <article class="lab-card lab-metric-card"><a class="lab-card-link" href="{{ '/research/' | relative_url }}" aria-label="查看研究方向详情"></a><span class="yc-number">{{ site.data.achievements.direction_count }}</span><strong>研究方向</strong><p>光机热流交叉</p></article>
-    <article class="lab-card lab-metric-card"><span class="yc-number">{{ coverage_years }}</span><strong>成果覆盖年</strong><p>持续积累</p></article>
+    <article class="lab-card lab-metric-card"><span class="yc-number">{{ coverage_years }}</span><strong>年成果覆盖</strong><p>持续积累</p></article>
     {% for paper in site.data.achievements.highlight_papers %}
     <article class="lab-card lab-capability"><span class="lab-index">{{ paper.abbr }}</span><h3>{{ paper.title }}</h3><p>{{ paper.journal }} · {{ paper.year }}</p><a href="{{ paper.url }}" target="_blank" rel="noopener noreferrer">查看公开来源 ↗</a></article>
     {% endfor %}
