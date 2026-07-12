@@ -147,7 +147,7 @@ mise exec -- bundle exec jekyll build
 2. 本地预览并运行生产构建。
 3. 提交并推送到 GitHub 的 `main` 分支。
 4. `.github/workflows/deploy-cloudflare-pages.yml` 自动安装依赖、构建 `_site/` 并部署。
-5. 打开 <https://lab.qiancan.cloud/> 检查结果。
+5. 打开 <https://heqiancan.com/> 检查结果。
 
 Cloudflare 或浏览器可能短暂缓存旧页面。部署成功后等待约一分钟，再使用 `Command + Shift + R` 强制刷新，或使用无痕窗口检查。
 
