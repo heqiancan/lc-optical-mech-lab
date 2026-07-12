@@ -6,12 +6,12 @@
   "direction_count": 6,
   "directions":
     [
-      { "name": "激光发射系统与光束控制", "count": 17 },
-      { "name": "热管理与强化传热", "count": 15 },
-      { "name": "精密光机结构设计", "count": 11 },
-      { "name": "测量装调与成像验证", "count": 4 },
-      { "name": "流体仿真与工程优化", "count": 2 },
-      { "name": "系统集成与工程验证", "count": 2 },
+      { "name": "激光发射系统与光束控制", "count": 17, "anchor": "beam" },
+      { "name": "热管理与强化传热", "count": 15, "anchor": "thermal" },
+      { "name": "精密光机结构设计", "count": 11, "anchor": "optomech" },
+      { "name": "测量装调与成像验证", "count": 4, "anchor": "metrology" },
+      { "name": "流体仿真与工程优化", "count": 2, "anchor": "cfd" },
+      { "name": "系统集成与工程验证", "count": 2, "anchor": "system" },
     ],
   "featured_papers":
     [

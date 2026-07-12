@@ -51,7 +51,7 @@ nav_order: 2
 
 <section class="lab-section" data-reveal><header class="lab-section-head"><div><span class="lab-eyebrow">Evidence Map</span><h2>方向成果分布</h2></div><p>共 {{ site.data.achievements.paper_count }} 篇公开论文，按成果清单中的项目支撑方向统计。</p></header><div class="lab-grid">
   {% for direction in site.data.achievements.directions %}
-  <article class="lab-card lab-direction-stat"><span class="yc-number">{{ direction.count }}</span><h3>{{ direction.name }}</h3><a href="{{ '/publications/' | relative_url }}">查看相关成果 →</a></article>
+  <article class="lab-card lab-direction-stat"><span class="yc-number">{{ direction.count }}</span><h3>{{ direction.name }}</h3><a href="{{ '/publications/all/' | relative_url }}?dir={{ direction.anchor }}">查看相关成果 →</a></article>
   {% endfor %}
 </div></section>
 

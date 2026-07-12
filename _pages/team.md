@@ -10,7 +10,14 @@ nav_order: 3
 <link rel="stylesheet" href="{{ '/assets/css/lab-site.css' | relative_url }}">
 <div class="lab-shell">
 
-<header class="lab-page-hero" data-reveal><span class="lab-eyebrow">Our Team</span><h1>团队成员</h1><p>围绕光电装备精密结构、热流管理与系统集成开展研究，由不同方向的老师和同学共同组成。</p></header>
+<section class="lab-hero" aria-labelledby="team-hero-title">
+  <video class="lab-hero-video" src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260331_151551_992053d1-3d3e-4b8c-abac-45f22158f411.mp4" muted autoplay loop playsinline preload="auto" aria-hidden="true"></video>
+  <div class="lab-hero-content">
+    <span class="lab-eyebrow">Our Team</span>
+    <h1 id="team-hero-title">团队成员</h1>
+    <p class="lab-hero-lead">围绕光电装备精密结构、热流管理与系统集成开展研究，由不同方向的老师和同学共同组成。</p>
+  </div>
+</section>
 
 <section class="lab-section" data-reveal><div class="lab-grid">
   <article class="lab-card lab-profile-card"><div class="lab-profile-head"><img src="{{ '/assets/img/team/shao-shuai.png' | relative_url }}" alt="邵帅"><h3>邵帅 研究员</h3><h3>Shuai Shao</h3></div><p><strong>博士生导师</strong>（以当年官方招生目录为准），招生专业为机械制造及其自动化。主要研究精密机械结构设计、激光发射系统结构设计与光束控制。</p><p>主持和参与完成十余项重大工程项目，获授权发明专利 5 项、实用新型专利 2 项并应用于工程项目。</p><p><a href="mailto:shaoshuaiciomp@163.com">邮件联系</a> · <a href="https://people.ucas.ac.cn/~shaoshuai">UCAS 官方主页 ↗</a></p></article>

@@ -297,6 +297,50 @@
     });
   }
 
+  function initPublicationJump() {
+    const scrollToTarget = (id) => {
+      const target = document.getElementById(id);
+      target?.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
+    };
+
+    document.querySelectorAll("[data-jump-to]").forEach((el) => {
+      el.addEventListener("click", () => scrollToTarget(el.dataset.jumpTo));
+    });
+
+    const dir = new URLSearchParams(window.location.search).get("dir");
+    if (dir) scrollToTarget(dir);
+  }
+
+  function initPublicationSections() {
+    const collapsedHeight = 640;
+    document.querySelectorAll(".lab-publications .publications").forEach((box) => {
+      const list = box.querySelector(".bibliography");
+      if (!list || !list.children.length) return;
+
+      box.classList.add("lab-pub-collapsed");
+      if (box.scrollHeight <= collapsedHeight + 8) {
+        box.classList.remove("lab-pub-collapsed");
+        return;
+      }
+
+      const headerRow = box.closest(".lab-publications")?.querySelector(".lab-section-head > div");
+      if (!headerRow) return;
+
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "lab-beam-button lab-pub-toggle";
+      const setLabel = () => {
+        button.textContent = box.classList.contains("is-expanded") ? "收起" : "展开全部 →";
+      };
+      setLabel();
+      button.addEventListener("click", () => {
+        box.classList.toggle("is-expanded");
+        setLabel();
+      });
+      headerRow.appendChild(button);
+    });
+  }
+
   function cardTilt() {
     if (reducedMotion || window.matchMedia("(pointer: coarse)").matches) return;
     document.querySelectorAll("[data-tilt]").forEach((card) => {
@@ -319,6 +363,8 @@
     highlightActiveNav();
     revealContent();
     animateNumbers();
+    initPublicationJump();
+    initPublicationSections();
     cardTilt();
     initOpticalField();
     initLightRaysField();
