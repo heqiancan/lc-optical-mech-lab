@@ -17,7 +17,7 @@ permalink: /
     <p class="lab-hero-lead">聚焦光电对抗装备关键支撑技术，开展精密机械、光机结构、热管理、流体仿真与系统集成研究，培养面向工程一线的交叉型科研人才。</p>
     <div class="lab-actions">
       <a class="lab-beam-button" href="{{ '/research/' | relative_url }}">探索研究方向&nbsp; →</a>
-      <a class="lab-button-secondary" href="{{ '/join/' | relative_url }}">加入我们</a>
+      <a class="lab-beam-button" href="{{ '/join/' | relative_url }}">加入我们&nbsp; →</a>
     </div>
   </div>
 </section>
