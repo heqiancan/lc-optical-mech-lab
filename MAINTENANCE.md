@@ -125,6 +125,14 @@ http://127.0.0.1:4000/
 
 停止服务器：在运行预览的终端按 `Control + C`。
 
+`jekyll serve` 默认只会自动重新构建改动的文件，不会自动刷新浏览器页面，需要手动刷新才能看到最新效果。如果想让保存后浏览器也自动刷新，加上 `--livereload`：
+
+```bash
+mise exec -- bundle exec jekyll serve --livereload
+```
+
+注意：`_config.yml` 的改动不受自动重建/热更新影响，修改后需要重启服务器。
+
 如果 `4000` 端口已被占用，可改用：
 
 ```bash
