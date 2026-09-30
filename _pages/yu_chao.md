@@ -9,10 +9,10 @@ nav: false
 <link rel="stylesheet" href="{{ '/assets/css/lab-site.css' | relative_url }}">
 <div class="lab-shell">
 
-<header class="lab-page-hero" data-reveal><span class="lab-eyebrow">Faculty Profile · Graduate Admission</span><h1>遇超 / Chao Yu</h1><p>高级工程师、硕士生导师。围绕光机系统设计、流体湍流演化、表面强化传热与光电装备热管理开展研究。</p><div class="lab-actions"><a class="lab-beam-button" href="mailto:yuchao@ciomp.ac.cn?subject=咨询遇超导师研究生招生">邮件联系&nbsp; →</a><a class="lab-button-secondary" href="https://people.ucas.ac.cn/~yuchao" target="_blank" rel="noopener noreferrer" style="color:var(--lab-ink)!important;border-color:var(--lab-border)">UCAS 官方主页 ↗</a></div></header>
+<header class="lab-page-hero" data-reveal><span class="lab-eyebrow">Faculty Profile · Graduate Admission</span><h1>遇超 / Chao Yu</h1><p>科室主任、高级工程师、硕士生导师。围绕光机系统设计、流体湍流演化、表面强化传热与光电装备热管理开展研究。</p><div class="lab-actions"><a class="lab-beam-button" href="mailto:yuchao@ciomp.ac.cn?subject=咨询遇超导师研究生招生">邮件联系&nbsp; →</a><a class="lab-button-secondary" href="https://people.ucas.ac.cn/~yuchao" target="_blank" rel="noopener noreferrer" style="color:var(--lab-ink)!important;border-color:var(--lab-border)">UCAS 官方主页 ↗</a></div></header>
 
 <section class="lab-section" data-reveal><div class="lab-grid">
-  <article class="lab-card yc-profile"><div class="yc-profile-wrap"><img class="yc-portrait" src="{{ '/assets/img/team/yu-chao.jpg' | relative_url }}" alt="遇超导师"><div><span class="lab-index">PROFILE</span><h3>导师信息</h3><div class="yc-meta"><div><strong>职称：</strong>高级工程师、硕士生导师</div><div><strong>单位：</strong>中国科学院长春光学精密机械与物理研究所</div><div><strong>招生专业：</strong>机械制造及其自动化、流体机械及工程、工程热物理</div><div><strong>邮箱：</strong><a href="mailto:yuchao@ciomp.ac.cn">yuchao@ciomp.ac.cn</a></div></div></div></div></article>
+  <article class="lab-card yc-profile"><div class="yc-profile-wrap"><img class="yc-portrait" src="{{ '/assets/img/team/yu-chao.jpg' | relative_url }}" alt="遇超导师"><div><span class="lab-index">PROFILE</span><h3>导师信息</h3><div class="yc-meta"><div><strong>职称：</strong>高级工程师、硕士生导师<br><strong>职位：</strong>科室主任</div><div><strong>单位：</strong>中国科学院长春光学精密机械与物理研究所</div><div><strong>招生专业：</strong>机械制造及其自动化、流体机械及工程、工程热物理</div><div><strong>邮箱：</strong><a href="mailto:yuchao@ciomp.ac.cn">yuchao@ciomp.ac.cn</a></div></div></div></div></article>
   <aside class="lab-card yc-callout"><span class="lab-index">OPPORTUNITY</span><h3>欢迎加入团队</h3><p>面向国家重大需求，在真实工程任务中理解问题、建立模型、完成设计与验证。</p><p>欢迎对机械、热流体和光电工程有兴趣，愿意动手实践的同学联系。</p></aside>
 </div></section>
 

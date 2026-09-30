@@ -61,9 +61,9 @@ permalink: /
     <p>面向真实工程问题，开展跨学科研究与研究生培养。</p>
   </header>
   <div class="lab-grid">
-    <article class="lab-card lab-person"><div class="lab-person-head"><img src="{{ '/assets/img/team/shao-shuai.png' | relative_url }}" alt="邵帅"><div class="lab-person-id"><h3>邵帅</h3><strong>研究员、博士生导师</strong></div></div><p>精密机械结构设计、激光发射系统结构设计与光束控制。</p><a href="https://people.ucas.ac.cn/~shaoshuai">UCAS 官方主页 ↗</a></article>
-    <article class="lab-card lab-person"><div class="lab-person-head"><img src="{{ '/assets/img/team/xue-xiangyao.jpeg' | relative_url }}" alt="薛向尧"><div class="lab-person-id"><h3>薛向尧</h3><strong>研究员、博士生导师</strong></div></div><p>光学精密机械结构总体设计与分析。</p><a href="{{ '/team/' | relative_url }}">查看导师信息 →</a></article>
-    <article class="lab-card lab-person"><a class="lab-person-link" href="{{ '/team/yu-chao/' | relative_url }}" aria-label="查看遇超导师站内主页"></a><div class="lab-person-head"><img src="{{ '/assets/img/team/yu-chao.jpg' | relative_url }}" alt="遇超"><div class="lab-person-id"><h3>遇超</h3><strong>高级工程师、硕士生导师</strong></div></div><p>光机系统设计、流体湍流演化与表面强化传热。</p><a href="https://people.ucas.ac.cn/~yuchao" target="_blank" rel="noopener noreferrer">UCAS 官方主页 ↗</a></article>
+    <article class="lab-card lab-person"><a class="lab-person-link" href="{{ '/team/yu-chao/' | relative_url }}" aria-label="查看遇超导师站内主页"></a><div class="lab-person-head"><img src="{{ '/assets/img/team/yu-chao.jpg' | relative_url }}" alt="遇超"><div class="lab-person-id"><h3>遇超</h3><strong>科室主任、高级工程师、硕士生导师</strong></div></div><p>光机系统设计、流体湍流演化与表面强化传热。</p><a href="https://people.ucas.ac.cn/~yuchao" target="_blank" rel="noopener noreferrer">UCAS 官方主页 ↗</a></article>
+    <article class="lab-card lab-person"><div class="lab-person-head"><img src="{{ '/assets/img/team/shao-shuai.png' | relative_url }}" alt="邵帅"><div class="lab-person-id"><h3>邵帅</h3><strong>研究员、博士生导师</strong></div></div><p>精密机械结构设计、激光发射系统结构设计与光束控制。</p><p><em>目前暂无招生计划。</em></p><a href="https://people.ucas.ac.cn/~shaoshuai">UCAS 官方主页 ↗</a></article>
+    <article class="lab-card lab-person"><div class="lab-person-head"><img src="{{ '/assets/img/team/xue-xiangyao.jpeg' | relative_url }}" alt="薛向尧"><div class="lab-person-id"><h3>薛向尧</h3><strong>研究员、博士生导师</strong></div></div><p>光学精密机械结构总体设计与分析。</p><p><em>目前暂无招生计划。</em></p><a href="{{ '/team/' | relative_url }}">查看导师信息 →</a></article>
   </div>
 </section>
 
